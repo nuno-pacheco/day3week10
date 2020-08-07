@@ -1,0 +1,9 @@
+<h2>Posts by {{username}} </h2>
+
+{{#unless posts}}
+  <p>There are no posts yet!</p>
+{{/unless}}
+
+{{#each posts}}
+  <li><a href="/posts/{{this._id}}"> {{title}} </a></li>
+{{/each}}
